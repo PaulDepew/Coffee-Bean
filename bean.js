@@ -3,18 +3,24 @@ function bean(){
 
     var person  = prompt('What Coffee do you like') ;
 
-    if  (person == "") {
-        txt = "Goodbye!" ;
-    } else if (person =="French") {
+     while  (person == "") {
+        txt = prompt('What Coffee do you like') ;
+    } if (person =="French") {
         txt = "Oui Oui!"
+    } if (person =="Guatemalan") {
+        txt = "Me Gusta!"
+    } if (person =="Espresso") {
+        txt = "Fancy, Fancy!"
+    } if (person =="Black") {
+        txt = "Like my soul..."
     } else {
         txt = "Hmm... Interesting Choice..."
     }
-    
+
     return txt 
 
-   
 }
+
 
 function coffee(){
     var txt;
