@@ -3,7 +3,7 @@ function bean(){
 
     var person  = prompt('What Coffee do you like') ;
 
-     while  (person == "") {
+     while  (person == '') {
         txt = prompt('What Coffee do you like') ;
     } if (person =="French") {
         txt = "Oui Oui!"
@@ -13,9 +13,9 @@ function bean(){
         txt = "Fancy, Fancy!"
     } if (person =="Black") {
         txt = "Like my soul..."
-    } else {
-        txt = "Hmm... Interesting Choice..."
-    }
+    } else  {
+        txt = "Wrong Place!"
+    } 
 
     return txt 
 
@@ -53,4 +53,28 @@ if (hourNow > 18) {
 }
 
 return greeting
+}
+
+function itemNumber(){
+    var count = prompt('How many beans do you need?');
+
+    while(count ==='' || isNaN(count)){
+        count = prompt('Put in a number please!') ;
+    }
+    return count
+}
+
+function shopDisplay(){
+
+    var count = itemNumber() ;
+    
+    for (i = 0 ; i < count ; i++ )  {
+        document.write( '<article>' +  
+        '<img src="coffeephotos/bean1.jpg">' + 
+          '<h2>This is a product</h2>' +
+            '<p> This is a description of this product </p>' +
+            '<img class="button" src="coffeephotos/Button.png">' + 
+            
+      '</article>') ;
+    }
 }
