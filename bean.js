@@ -4,7 +4,9 @@ function bean(){
     var person  = prompt('What Coffee do you like') ;
 
     if  (person == "") {
-        txt= "Goodbye!" ;
+        txt = "Goodbye!" ;
+    } else if (person =="French") {
+        txt = "Oui Oui!"
     } else {
         txt = "Hmm... Interesting Choice..."
     }
