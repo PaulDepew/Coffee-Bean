@@ -13,6 +13,8 @@ function bean(){
         txt = "Fancy, Fancy!"
     } if (person =="Black") {
         txt = "Like my soul..."
+    } if (person =="Irish") {
+            txt = "Top of the Morning to ya!"
     } else  {
         txt = "Wrong Place!"
     } 
